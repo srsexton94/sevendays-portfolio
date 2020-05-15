@@ -55,6 +55,21 @@
 #contact {
   background-color: white;
   height: 100vh;
+  padding-top: 10vh;
+}
+
+#contact-form {
+  float: left;
+  margin-left: 25vh;
+  max-width: 90vw;
+  width: 100vh;
+}
+
+#contact-info {
+  float: right;
+  margin-right: 35vh;
+  margin-top: 20vh;
+  text-align: center;
 }
 
 // Background Images

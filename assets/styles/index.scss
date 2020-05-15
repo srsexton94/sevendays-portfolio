@@ -1,5 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
 
+// carousel
 .carousel-item {
   height: 100vh;
   min-height: 350px;
@@ -13,4 +14,60 @@
 #final-slide {
   background: rgba(255, 255, 255, .85);
   color: #102e0f;
+}
+
+// About Me
+#about {
+  height: 100vh;
+  padding: 0;
+
+  .about-content {
+    // display: inline-block;
+    float: right;
+    margin: 15vh 0 0 15vh;
+    width: 50vw;
+
+    .socials {
+      margin: 5vh auto;
+      text-align: center;
+    }
+  }
+  .profile-img {
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: -5px 8px 8px 5px rgba(0,0,0,0.5);
+    float: left;
+    height: 50vh;
+    margin: 20vh 0;
+    padding: 3vh 3vh 10vh 3vh;
+    transform: rotate(-7deg);
+    width: 40vh;
+  }
+}
+
+// Project Details Section
+#details {
+  background-color: white;
+  height: 100vh;
+}
+
+// Contact Form
+#contact {
+  background-color: white;
+  height: 100vh;
+}
+
+// Background Images
+.bg-img1 {
+  background: url('./public/bg1.jpeg') no-repeat center center fixed;
+  background-color: white;
+  background-size: cover;
+  height: 100vh;
+}
+
+.bg-img2 {
+  background: url('./public/bg2.jpeg') no-repeat center center fixed;
+  background-color: white;
+  background-size: cover;
+  height: 100vh;
 }

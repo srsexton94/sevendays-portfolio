@@ -18,13 +18,13 @@
 
 // About Me
 #about {
-  height: 100vh;
+  min-height: 110vh;
   padding: 0;
 
   .about-content {
-    // display: inline-block;
+    display: inline-block;
     float: right;
-    margin: 15vh 0 0 15vh;
+    // margin: 15vh 0 0 15vh;
     width: 50vw;
 
     .socials {
@@ -36,12 +36,40 @@
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: -5px 8px 8px 5px rgba(0,0,0,0.5);
+    display: inline-block;
     float: left;
     height: 50vh;
-    margin: 20vh 0;
+    margin: 15vh 0;
     padding: 3vh 3vh 10vh 3vh;
     transform: rotate(-7deg);
     width: 40vh;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #about {
+    padding: 10vh 0 !important;
+
+    .about-content {
+      font-size: .85em;
+      height: 100%;
+      width: 40vw !important;
+
+      h1 {
+        font-size: 2em;
+      }
+    }
+
+    .profile-img {
+      height: 40vh !important;
+      width: 30vh !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #about {
+    height: 175vh;
   }
 }
 
@@ -50,21 +78,31 @@
   background-color: white;
   height: 100vh;
   padding-top: 10vh;
+
+  #contact-form {
+    float: left;
+    margin-left: 25vh;
+    max-width: 90vw;
+    width: 100vh;
+  }
+
+  #contact-info {
+    font-size: 1.25em;
+    float: right;
+    margin-right: 35vh;
+    margin-top: 20vh;
+    text-align: center;
+  }
 }
 
-#contact-form {
-  float: left;
-  margin-left: 25vh;
-  max-width: 90vw;
-  width: 100vh;
-}
-
-#contact-info {
-  font-size: 1.25em;
-  float: right;
-  margin-right: 35vh;
-  margin-top: 20vh;
-  text-align: center;
+@media only screen and (max-width: 850px) {
+  #contact-form,
+  #contact-info {
+    display: block !important;
+    float: none !important;
+    margin: auto !important;
+    padding-bottom: 10vh;
+  }
 }
 
 // Background Images
